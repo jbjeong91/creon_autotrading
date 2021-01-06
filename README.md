@@ -14,6 +14,9 @@
 조코딩 강의
 https://www.youtube.com/c/%EC%A1%B0%EC%BD%94%EB%94%A9JoCoding/playlists
 
+파이썬 증권 데이터 분석
+https://github.com/INVESTAR/StockAnalysisInPython
+
 Slacker
 https://github.com/os/slacker
 
