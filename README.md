@@ -1,6 +1,12 @@
-# creon_autotrading
+# Description
 - 대신증권 크레온플러스를 활용한 자동 매매
 - 변동성 돌파전략 기반
+
+# How to use
+- 자동 로그인
+  python AutoConnect.py
+- 자동 매매 시작
+  python AutoTrade.py
 
 # refernece
 조코딩 강의
