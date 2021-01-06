@@ -5,7 +5,7 @@ from datetime import datetime
 from slacker import Slacker
 import time, calendar
 
-slack = Slacker('@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@') #변경필수
+slack = Slacker('xoxb-1611582422437-1638515189104-iz9WIKxuAdRocKwL6CO5HhJo') #변경필수
 def dbgout(message):
     """인자로 받은 문자열을 파이썬 셸과 슬랙으로 동시에 출력한다."""
     print(datetime.now().strftime('[%m/%d %H:%M:%S]'), message)
@@ -252,7 +252,7 @@ if __name__ == '__main__':
         symbol_list = ['A305720'] # 거래할 종목
         bought_list = []     # 매수 완료된 종목 리스트
         target_buy_count = 1 # 매수할 종목 수
-        buy_percent = 0.1 
+        buy_percent = 0.10
         printlog('check_creon_system() :', check_creon_system())  # 크레온 접속 점검
         stocks = get_stock_balance('ALL')      # 보유한 모든 종목 조회
         total_cash = int(get_current_cash())   # 100% 증거금 주문 가능 금액 조회
@@ -275,26 +275,23 @@ if __name__ == '__main__':
                 sys.exit(0)
             if t_9 < t_now < t_start and soldout == False:
                 soldout = True
-                #sell_all()
-                dbgout('원래는 모두 팔았음')
+                sell_all()
+                dbgout('`일괄매도`')
             if t_start < t_now < t_sell :  # AM 09:05 ~ PM 03:15 : 매수
                 for sym in symbol_list:
                     if len(bought_list) < target_buy_count:
-                        #buy_etf(sym)
-                        dbgout('원래는 구매했음')
+                        buy_etf(sym)
+                        dbgout('`매수발생`')
                         time.sleep(1)
                 if t_now.minute == 30 and 0 <= t_now.second <= 5: 
                     get_stock_balance('ALL')
                     time.sleep(5)
             if t_sell < t_now < t_exit:  # PM 03:15 ~ PM 03:20 : 일괄 매도
-                '''
                 if sell_all() == True:
-                    dbgout('`sell_all() returned True -> self-destructed!`')
+                    dbgout('`일괄매도`')
                     sys.exit(0)
-                '''
-                dbgout('원래는 일괄매도')
             if t_exit < t_now:  # PM 03:20 ~ :프로그램 종료
-                dbgout('`self-destructed!`')
+                dbgout('`프로그램 종료!`')
                 sys.exit(0)
             time.sleep(3)
     except Exception as ex:
