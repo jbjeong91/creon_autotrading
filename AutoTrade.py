@@ -5,7 +5,7 @@ from datetime import datetime
 from slacker import Slacker
 import time, calendar
 
-slack = Slacker('xoxb-1611582422437-1638515189104-iz9WIKxuAdRocKwL6CO5HhJo') #변경필수
+slack = Slacker('@@@@@@@@@') #변경필수
 def dbgout(message):
     """인자로 받은 문자열을 파이썬 셸과 슬랙으로 동시에 출력한다."""
     print(datetime.now().strftime('[%m/%d %H:%M:%S]'), message)
