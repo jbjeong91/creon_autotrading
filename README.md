@@ -5,10 +5,10 @@
 # How to use
 - 자동 로그인
 
-  python AutoConnect.py
+  >python AutoConnect.py
 - 자동 매매 시작
 
-  python AutoTrade.py
+  >python AutoTrade.py
 
 # Referenece
 조코딩 강의
