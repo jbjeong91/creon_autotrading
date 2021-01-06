@@ -10,7 +10,7 @@
 
   python AutoTrade.py
 
-# Refernece
+# Referenece
 조코딩 강의
 https://www.youtube.com/c/%EC%A1%B0%EC%BD%94%EB%94%A9JoCoding/playlists
 
