@@ -7,7 +7,7 @@
   
   참조: https://www.youtube.com/watch?v=s24dxIp-Cp0&list=PLU9-uwewPMe0fB60VIMuKFV7gPDXmyOzp&index=3
   
-  Slakcer 셋팅 후, 토큰을 발급받아 AutoTrade.py 코드에 토큰 붙여넣기 후 저장
+  Slakcer 셋팅 후, 토큰을 발급받아 AutoTrade.py 의 ```slack = Slacker('@@@@@@@@@')``` @@부분에 토큰 입력
 
 - 크레온 설치
 
