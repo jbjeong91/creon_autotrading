@@ -6,11 +6,13 @@
 - Slacker 셋팅
   
   참조: https://www.youtube.com/watch?v=s24dxIp-Cp0&list=PLU9-uwewPMe0fB60VIMuKFV7gPDXmyOzp&index=3
+  
   Slakcer 셋팅 후, 토큰을 발급받아 AutoTrade.py 코드에 토큰 붙여넣기 후 저장
 
 - 크레온 설치
 
   https://money2.creontrade.com/E5/WTS/Customer/GuideTrading/CW_DownloadCenter.aspx?m=2194&p=3234&v=2406
+  
   HTS 설치후, 로그인창 상단에 Creon plus로 체크 후 로그인 진행
   
 ## How to use  
